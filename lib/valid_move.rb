@@ -2,7 +2,7 @@
 require 'pry'
 def valid_move?(board, index)
   binding.pry
-  if (!(position_taken?(board, position)) && position.between?(0,10))
+  if (!(position_taken?(board, index)) && position.between?(0,10))
     return true
   else
     return false
